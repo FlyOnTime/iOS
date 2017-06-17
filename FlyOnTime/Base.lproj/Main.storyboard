@@ -1,26 +1,92 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tPk-rr-PSd">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Dashboard View Controller-->
+        <scene sceneID="iff-AY-Uqt">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <tableViewController id="tPk-rr-PSd" customClass="DashboardViewController" customModule="FlyOnTime" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="572" sectionHeaderHeight="28" sectionFooterHeight="28" id="uE7-PB-cQf">
+                        <rect key="frame" x="0.0" y="0.0" width="527" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FoldingCell" rowHeight="572" id="8Wx-uk-D8X" customClass="DashboardCell" customModule="FlyOnTime" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="527" height="572"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Wx-uk-D8X" id="Lqf-Kc-Sag">
+                                    <rect key="frame" x="0.0" y="0.0" width="527" height="571.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OMH-DZ-Otp">
+                                            <rect key="frame" x="8" y="105" width="511" height="456"/>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="456" id="gmv-5U-Ntc"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SPy-an-Gly" customClass="RotatedView" customModule="FoldingCell">
+                                            <rect key="frame" x="8" y="8" width="511" height="75"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b18-b3-FU6">
+                                                    <rect key="frame" x="0.0" y="0.0" width="511" height="75"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="75" id="3Rs-p5-YpP"/>
+                                                <constraint firstItem="b18-b3-FU6" firstAttribute="leading" secondItem="SPy-an-Gly" secondAttribute="leading" id="5eh-ub-qEy"/>
+                                                <constraint firstItem="b18-b3-FU6" firstAttribute="top" secondItem="SPy-an-Gly" secondAttribute="top" id="HM6-Ju-pcv"/>
+                                                <constraint firstAttribute="trailing" secondItem="b18-b3-FU6" secondAttribute="trailing" id="eFp-KT-JLc"/>
+                                                <constraint firstAttribute="bottom" secondItem="b18-b3-FU6" secondAttribute="bottom" id="nco-SU-zYA"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="SPy-an-Gly" firstAttribute="top" secondItem="Lqf-Kc-Sag" secondAttribute="top" constant="8" identifier="ForegroundViewTop" id="2n8-cx-Ynr"/>
+                                        <constraint firstAttribute="trailing" secondItem="SPy-an-Gly" secondAttribute="trailing" constant="8" id="7Zf-oZ-YQy"/>
+                                        <constraint firstItem="OMH-DZ-Otp" firstAttribute="leading" secondItem="Lqf-Kc-Sag" secondAttribute="leading" constant="8" id="Bnu-cz-JgP"/>
+                                        <constraint firstItem="OMH-DZ-Otp" firstAttribute="top" secondItem="Lqf-Kc-Sag" secondAttribute="topMargin" constant="97" identifier="ContainerViewTop" id="By6-do-ngu"/>
+                                        <constraint firstItem="SPy-an-Gly" firstAttribute="leading" secondItem="Lqf-Kc-Sag" secondAttribute="leading" constant="8" id="UYL-Lh-lVx"/>
+                                        <constraint firstAttribute="trailing" secondItem="OMH-DZ-Otp" secondAttribute="trailing" constant="8" id="dfC-gh-sp7"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="itemCount">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backViewColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.44814416821561337" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="containerView" destination="OMH-DZ-Otp" id="OLa-k5-vwD"/>
+                                    <outlet property="containerViewTop" destination="By6-do-ngu" id="Ty3-kC-NvK"/>
+                                    <outlet property="foregroundView" destination="SPy-an-Gly" id="LfM-cY-bU4"/>
+                                    <outlet property="foregroundViewTop" destination="2n8-cx-Ynr" id="g0V-Fd-QY6"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="tPk-rr-PSd" id="mP2-sV-Am8"/>
+                            <outlet property="delegate" destination="tPk-rr-PSd" id="gqy-mj-bJG"/>
+                        </connections>
+                    </tableView>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="527" height="800"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tOh-H8-0Pe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-104.8" y="113.3433283358321"/>
         </scene>
     </scenes>
 </document>

@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		00041E491EF4785000ED6D89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00041E481EF4785000ED6D89 /* AppDelegate.swift */; };
-		00041E4B1EF4785000ED6D89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00041E4A1EF4785000ED6D89 /* ViewController.swift */; };
 		00041E4E1EF4785000ED6D89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00041E4C1EF4785000ED6D89 /* Main.storyboard */; };
 		00041E501EF4785000ED6D89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00041E4F1EF4785000ED6D89 /* Assets.xcassets */; };
 		00041E531EF4785000ED6D89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00041E511EF4785000ED6D89 /* LaunchScreen.storyboard */; };
 		00041E5E1EF4785000ED6D89 /* FlyOnTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00041E5D1EF4785000ED6D89 /* FlyOnTimeUITests.swift */; };
+		0050CEF51EF47A100064C5B7 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0050CEF41EF47A100064C5B7 /* DashboardViewController.swift */; };
+		0050CEF71EF48EB20064C5B7 /* DashboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0050CEF61EF48EB20064C5B7 /* DashboardCell.swift */; };
+		9CBD7315A9648C1F17C02EEE /* Pods_FlyOnTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5806AD12351DC9364F1E933A /* Pods_FlyOnTime.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +30,6 @@
 /* Begin PBXFileReference section */
 		00041E451EF4785000ED6D89 /* FlyOnTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlyOnTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00041E481EF4785000ED6D89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		00041E4A1EF4785000ED6D89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		00041E4D1EF4785000ED6D89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00041E4F1EF4785000ED6D89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00041E521EF4785000ED6D89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +37,11 @@
 		00041E591EF4785000ED6D89 /* FlyOnTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlyOnTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00041E5D1EF4785000ED6D89 /* FlyOnTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyOnTimeUITests.swift; sourceTree = "<group>"; };
 		00041E5F1EF4785000ED6D89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0050CEF41EF47A100064C5B7 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DashboardViewController.swift; path = ../DashboardViewController.swift; sourceTree = "<group>"; };
+		0050CEF61EF48EB20064C5B7 /* DashboardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardCell.swift; sourceTree = "<group>"; };
+		5806AD12351DC9364F1E933A /* Pods_FlyOnTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlyOnTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A05531FDAB515B3D4DD8A586 /* Pods-FlyOnTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlyOnTime.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlyOnTime/Pods-FlyOnTime.release.xcconfig"; sourceTree = "<group>"; };
+		E16C7F2ED99029904744D039 /* Pods-FlyOnTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlyOnTime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlyOnTime/Pods-FlyOnTime.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CBD7315A9648C1F17C02EEE /* Pods_FlyOnTime.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +69,8 @@
 				00041E471EF4785000ED6D89 /* FlyOnTime */,
 				00041E5C1EF4785000ED6D89 /* FlyOnTimeUITests */,
 				00041E461EF4785000ED6D89 /* Products */,
+				4FFCF474DEB50261B1F51750 /* Pods */,
+				679F44F97434D5F69C0B516A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,8 +86,9 @@
 		00041E471EF4785000ED6D89 /* FlyOnTime */ = {
 			isa = PBXGroup;
 			children = (
+				0050CEF61EF48EB20064C5B7 /* DashboardCell.swift */,
+				0050CEF41EF47A100064C5B7 /* DashboardViewController.swift */,
 				00041E481EF4785000ED6D89 /* AppDelegate.swift */,
-				00041E4A1EF4785000ED6D89 /* ViewController.swift */,
 				00041E4C1EF4785000ED6D89 /* Main.storyboard */,
 				00041E4F1EF4785000ED6D89 /* Assets.xcassets */,
 				00041E511EF4785000ED6D89 /* LaunchScreen.storyboard */,
@@ -96,6 +106,23 @@
 			path = FlyOnTimeUITests;
 			sourceTree = "<group>";
 		};
+		4FFCF474DEB50261B1F51750 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E16C7F2ED99029904744D039 /* Pods-FlyOnTime.debug.xcconfig */,
+				A05531FDAB515B3D4DD8A586 /* Pods-FlyOnTime.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		679F44F97434D5F69C0B516A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5806AD12351DC9364F1E933A /* Pods_FlyOnTime.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +130,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00041E621EF4785000ED6D89 /* Build configuration list for PBXNativeTarget "FlyOnTime" */;
 			buildPhases = (
+				A47085D18576324B4448B404 /* [CP] Check Pods Manifest.lock */,
 				00041E411EF4785000ED6D89 /* Sources */,
 				00041E421EF4785000ED6D89 /* Frameworks */,
 				00041E431EF4785000ED6D89 /* Resources */,
+				FFA8ED9DE69BEDBB31D5E658 /* [CP] Embed Pods Frameworks */,
+				27A3FCB312695C6D94CC5298 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,13 +226,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		27A3FCB312695C6D94CC5298 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlyOnTime/Pods-FlyOnTime-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A47085D18576324B4448B404 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FFA8ED9DE69BEDBB31D5E658 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlyOnTime/Pods-FlyOnTime-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		00041E411EF4785000ED6D89 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00041E4B1EF4785000ED6D89 /* ViewController.swift in Sources */,
 				00041E491EF4785000ED6D89 /* AppDelegate.swift in Sources */,
+				0050CEF71EF48EB20064C5B7 /* DashboardCell.swift in Sources */,
+				0050CEF51EF47A100064C5B7 /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +418,7 @@
 		};
 		00041E631EF4785000ED6D89 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E16C7F2ED99029904744D039 /* Pods-FlyOnTime.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P6JXXWWH54;
@@ -352,6 +432,7 @@
 		};
 		00041E641EF4785000ED6D89 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A05531FDAB515B3D4DD8A586 /* Pods-FlyOnTime.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P6JXXWWH54;
@@ -410,6 +491,7 @@
 				00041E641EF4785000ED6D89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00041E651EF4785000ED6D89 /* Build configuration list for PBXNativeTarget "FlyOnTimeUITests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +500,7 @@
 				00041E671EF4785000ED6D89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

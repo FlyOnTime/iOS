@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0830"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "00041E441EF4785000ED6D89"
-               BuildableName = "FlyOnTime.app"
-               BlueprintName = "FlyOnTime"
-               ReferencedContainer = "container:FlyOnTime.xcodeproj">
+               BlueprintIdentifier = "01E99D51F2E5FABC50A5DF2EACF35C91"
+               BuildableName = "Pods_FlyOnTime.framework"
+               BlueprintName = "Pods-FlyOnTime"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,26 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "00041E581EF4785000ED6D89"
-               BuildableName = "FlyOnTimeUITests.xctest"
-               BlueprintName = "FlyOnTimeUITests"
-               ReferencedContainer = "container:FlyOnTime.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "00041E441EF4785000ED6D89"
-            BuildableName = "FlyOnTime.app"
-            BlueprintName = "FlyOnTime"
-            ReferencedContainer = "container:FlyOnTime.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -61,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "00041E441EF4785000ED6D89"
-            BuildableName = "FlyOnTime.app"
-            BlueprintName = "FlyOnTime"
-            ReferencedContainer = "container:FlyOnTime.xcodeproj">
+            BlueprintIdentifier = "01E99D51F2E5FABC50A5DF2EACF35C91"
+            BuildableName = "Pods_FlyOnTime.framework"
+            BlueprintName = "Pods-FlyOnTime"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -80,16 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "00041E441EF4785000ED6D89"
-            BuildableName = "FlyOnTime.app"
-            BlueprintName = "FlyOnTime"
-            ReferencedContainer = "container:FlyOnTime.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
